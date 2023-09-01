@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio CSS Responsivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+                <h1>Danilo Modas</h1>
+                <form>
+                    <input type="search" placeholder="Pesquisar">
+                    <button type="submit">Pesquisar</button>
+                </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+            <ul class="container">
+                <li>Sobre a Loja</li>
+                <li>Produtos</li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="./imagens/no-rules-bauru4-1024x768.jpg" id="imagem" alt="Fachada da loja">
+        </div>
+        <div class="sobre-a-loja">
+            <h2>Sobre a loja</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid vel itaque aspernatur quo laboriosam 
+                    dolore hic quisquam, tempora harum fugiat explicabo numquam illo odit rerum ea natus nemo fugit perferendis.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora dolore consequuntur nam distinctio delectus repellat a assumenda sapiente totam laudantium. Sequi animi saepe obcaecati quae repudiandae blanditiis quidem alias at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid vel itaque aspernatur quo laboriosam dolore hic quisquam, tempora harum fugiat explicabo numquam illo odit rerum ea natus nemo fugit perferendis.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora dolore consequuntur nam distinctio delectus repellat a assumenda sapiente totam laudantium. Sequi animi saepe obcaecati quae repudiandae blanditiis quidem alias at.
+                </p>
+        </div>
+    </main>
+    <div class="container conteudo">
+        <main>
+            <section class="detalhes1">
+                <h2>Produtos</h2>
+                <article class="detalhes">
+                <a>
+                    <img src="./imagens/istockphoto-1372927070-1024x1024.jpg" alt="Tenis1" />
+                    <h3>
+                        Tênis marca DK azul, super confortavel, para o dia a dia e para atividades fisicas
+                    </h3>
+                    <button type="submit">Adicionar ao carrinho</button>
+                </a>
+                </article>
+                <article class="detalhes">
+                <a>
+                    <img src="./imagens/istockphoto-1394359729-1024x1024.jpg" alt="Tenis2" />
+                    <h3>
+                        Tênis marca DK branco, super confortavel, para o dia a dia e para atividades fisicas
+                    </h3>
+                    <button type="submit">Adicionar ao carrinho</button>
+                </a>
+                </article>
+                <article class="detalhes">
+                <a>
+                    <img src="./imagens/sports-1216016_1280.jpg" alt="Tenis3" />
+                    <h3>
+                        Tênis marca DK Laranja, super confortavel, para o dia a dia e para atividades fisicas
+                    </h3>
+                    <button type="submit">Adicionar ao carrinho</button>
+                </a>
+                </article>
+                <article class="detalhes">
+                <a>
+                    <img src="./imagens/190349300605067.jpg" alt="Tenis4" />
+                    <h3>
+                        Tênis marca Adidas branco casual, super confortavel, para o dia a dia e mais
+                    </h3>
+                    <button type="submit">Adicionar ao carrinho</button>
+                </a>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+    <footer>
+    <p class="direitos-reservados">&copy; 2023 - Danilo Modas - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
